@@ -3,7 +3,6 @@ pragma solidity 0.8.19;
 
 import {IChallenge} from "src/IChallenge.sol";
 
-
 contract ExampleChallenge is IChallenge {
     uint256 constant TEST_CASES = 50;
     string public name = "Example";
