@@ -57,5 +57,5 @@ Feel free to use this for other challenges, too!
 | (Challenge 1)     | 1            | TBA                                                                                                                              |
 | (Challenge 2)     | 2            | TBA                                                                                                                              |
 | (Challenge 3)     | 3            | TBA                                                                                                                              |
-| (Challenge 4)     | 4            | TBA                                                                                                                              |
+| Reverse           | 4            | [0xd6Ca10E9a443f83Db6Aa527a423b7150a1Cfc4f5](https://optimistic.etherscan.io/address/0xd6Ca10E9a443f83Db6Aa527a423b7150a1Cfc4f5) |
 | (Challenge 5)     | 5            | TBA                                                                                                                              |
