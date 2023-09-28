@@ -12,21 +12,21 @@ type OptimizorUpdate = {
   handle: string,
 }
 
-// optimism mainnet
-// const client = createPublicClient({
-//   chain: optimism,
-//   transport: http(),
-// })
-// const OPTIMIZOR_WAR_ADDR = ""
-// const EXPLORER_BASE_URL = "https://optimistic.etherscan.io/"
-
-// optimism goerli
+// optimism-mainnet
 const client = createPublicClient({
-  chain: optimismGoerli,
+  chain: optimism,
   transport: http(),
 })
-const OPTIMIZOR_WAR_ADDR = "0x715Ff443571Af51A1F2931Fdb7f6B66b70aae6d0"
-const EXPLORER_BASE_URL = "https://goerli-optimism.etherscan.io/"
+const OPTIMIZOR_WAR_ADDR = "0x7ef472638fCf72216466D20C92265F9eEac5C716"
+const EXPLORER_BASE_URL = "https://optimistic.etherscan.io/"
+
+// optimism-goerli
+// const client = createPublicClient({
+//   chain: optimismGoerli,
+//   transport: http(),
+// })
+// const OPTIMIZOR_WAR_ADDR = "0x715Ff443571Af51A1F2931Fdb7f6B66b70aae6d0"
+// const EXPLORER_BASE_URL = "https://goerli-optimism.etherscan.io/"
 
 // anvil
 // const client = createTestClient({

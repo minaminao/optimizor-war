@@ -31,8 +31,8 @@ After that, they will also be published in this repository.
 
 To solve challenges, players need to execute the two functions:
 
-1. Call the `commit(bytes32 key)`
-2. After waiting for 32 blocks, call the `challenge(uint256 challengeId, address solverAddr, uint256 salt, string calldata solverHandle)`  function
+1. Call the `commit(bytes32 key)`.
+2. After waiting for 32 blocks, call the `challenge(uint256 challengeId, address solverAddr, uint256 salt, string calldata solverHandle)`  function.
 
 The key is `keccak256(abi.encode(msg.sender, address(solver).codehash, salt))`.
 Please set the salt to a random value.
@@ -42,9 +42,9 @@ Also, your contract must be pure.
 Being pure means not executing opcodes that mutate the state or call other contracts.
 
 When you execute the `challenge` function, the gas cost will be measured on-chain.
-If the gas cost consumed is less than that of the most gas-efficient solver recorded in the `OptimizorWar` contract, the solver will be recorded.
+If the gas cost consumed is less than that of the most gas-efficient solver, the solver will be recorded in the `OptimizorWar` contract.
 
-As an example, a simple challenge has been deployed to `challengeId = 42`.
+As an example, a simple challenge has been deployed as `challengeId = 42`.
 By using [optimizor-war-solver-template](https://github.com/minaminao/optimizor-war-solver-template), you can quickly check whether the challenge has been solved locally and also submit the solver on-chain.
 It would be good to reuse this for other challenges.
 
