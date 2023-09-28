@@ -44,7 +44,7 @@ When you execute the `challenge` function, the gas cost will be measured on-chai
 If your gas cost is lower than that of the most gas-efficient solver, the solver will be recorded in the `OptimizorWar` contract.
 
 For practice, a simple challenge has been set up as `challengeId = 42`.
-Using [optimizor-war-solver-template](https://github.com/minaminao/optimizor-war-solver-template), you can quickly see if the challenge is solved locally and also submit the solver on-chain.
+Using [optimizor-war-example-solver](https://github.com/minaminao/optimizor-war-example-solver), you can quickly see if the challenge is solved locally and also submit the solver on-chain.
 Feel free to use this for other challenges, too!
 
 ## Deployment Addresses
