@@ -3,9 +3,9 @@ pragma solidity 0.8.19;
 
 import {IChallenge} from "src/IChallenge.sol";
 
-uint256 constant TEST_CASES = 50;
 
 contract ExampleChallenge is IChallenge {
+    uint256 constant TEST_CASES = 50;
     string public name = "Example";
 
     function run(address solverAddr, uint256 /* seed */ ) external returns (uint48 gasUsed) {
