@@ -1,52 +1,51 @@
 ![](assets/logo.svg)
 
-A gas golf game where you create gas-efficient contracts for 6 challenges. 
-This game is inspired by [Optimizor Club](https://github.com/OptimizorClub).
+A gas golf game where you create gas-efficient contracts for 6 challenges. Inspired by [Optimizor Club](https://github.com/OptimizorClub).
 
 ## Overview 
 
 This game is part of [Huffathon](https://huff.sh/hackathon) and will run for **10 hours, starting at 22:00 UTC on September 28, 2023.**
 
-Once the game starts, players who have created the most gas-efficient contract for each challenge will be listed on the challenge hex at https://minaminao.github.io/optimizor-war/.
+Once the game begins, players who have made the most gas-efficient contracts for each challenge will be featured on the challenge hex at https://minaminao.github.io/optimizor-war/.
 
 There are two types of prizes in this game:
 
-1. At the end of the game, the player whose name appears on the most hexes wins **$200**.
+1. The player whose name appears on the most hexes at the end wins **$200**.
 2. The player whose name is on the hexes for the longest total time wins **$200**.
 
 It's up to you which one you want to go for.
 
 ## Registry
 
-[The `OptimizorWar` contract](src/OptimizorWar.sol) is the registry for challenges.
-Challenges can be registered by executing the `addChallenge(uint256 challengeId, address challengeAddr)` function.
-This function is modified by `onlyOwner`, so only the admin can execute it.
+[The `OptimizorWar` contract](src/OptimizorWar.sol) is the challenge registry.
+Challenges can be registered by calling the `addChallenge(uint256 challengeId, address challengeAddr)` function.
+Only the admin can use this function because it is modified by `onlyOwner`.
 
-After the game start time has passed, the admin will deploy 6 challenges on Optimism.
-Once the challenges are registered, links to the OP Mainnet Explorer for the contract addresses will be listed on each hex of the UI.
-You can check the source code of the challenges by jumping to that page.
+After the game starts, the admin will deploy 6 challenges on Optimism.
+Once the challenges are registered, you'll see links to the OP Mainnet Explorer for the contract addresses on each hex of the UI.
+To check the source code of the challenges, go to that page by clicking the links.
 After that, they will also be published in this repository.
 
-## How to Solve Challenges
+## Solving Challenges
 
-To solve challenges, players need to execute the two functions:
+To solve challenges, players need to do two things:
 
-1. Call the `commit(bytes32 key)`.
+1. Call the `commit(bytes32 key)` function.
 2. After waiting for 32 blocks, call the `challenge(uint256 challengeId, address solverAddr, uint256 salt, string calldata solverHandle)`  function.
 
 The key is `keccak256(abi.encode(msg.sender, address(solver).codehash, salt))`.
-Please set the salt to a random value.
-The reason for waiting 32 blocks is to prevent front-running.
+Please use a random value for the salt and wait 32 blocks before calling the `challenge` function to prevent front-running.
 
-Also, your contract must be pure.
-Being pure means not executing opcodes that mutate the state or call other contracts.
+Also, your contract should be pure.
+This means it should not execute opcodes that mutate the state or call other contracts.
+For more information, see [axic/puretea](https://github.com/axic/puretea).
 
 When you execute the `challenge` function, the gas cost will be measured on-chain.
-If the gas cost consumed is less than that of the most gas-efficient solver, the solver will be recorded in the `OptimizorWar` contract.
+If your gas cost is lower than that of the most gas-efficient solver, the solver will be recorded in the `OptimizorWar` contract.
 
-As an example, a simple challenge has been deployed as `challengeId = 42`.
-By using [optimizor-war-solver-template](https://github.com/minaminao/optimizor-war-solver-template), you can quickly check whether the challenge has been solved locally and also submit the solver on-chain.
-It would be good to reuse this for other challenges.
+For practice, a simple challenge has been set up as `challengeId = 42`.
+Using [optimizor-war-solver-template](https://github.com/minaminao/optimizor-war-solver-template), you can quickly see if the challenge is solved locally and also submit the solver on-chain.
+Feel free to use this for other challenges, too!
 
 ## Deployment Addresses
 
