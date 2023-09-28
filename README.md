@@ -10,8 +10,8 @@ Once the game begins, players who have made the most gas-efficient contracts for
 
 There are two types of prizes in this game:
 
-1. The player whose name appears on the most hexes at the end wins **$200**.
-2. The player whose name is on the hexes for the longest total time wins **$200**.
+1. The player whose name appears on the most hexes at the end wins **$250**.
+2. The player whose name is on the hexes for the longest total time wins **$250**.
 
 It's up to you which one you want to go for.
 
