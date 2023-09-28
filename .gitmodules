@@ -4,3 +4,6 @@
 [submodule "lib/solady"]
 	path = lib/solady
 	url = https://github.com/vectorized/solady
+[submodule "lib/puretea"]
+	path = lib/puretea
+	url = https://github.com/axic/puretea
