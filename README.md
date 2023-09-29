@@ -53,9 +53,9 @@ Feel free to use this for other challenges, too!
 | ------------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------- |
 | OptimizorWar  | -            | [0x7ef472638fCf72216466D20C92265F9eEac5C716](https://optimistic.etherscan.io/address/0x7ef472638fCf72216466D20C92265F9eEac5C716) |
 | Example       | 42           | [0xE55E00d743751FD622a9a0478b3C4a47EF3CD632](https://optimistic.etherscan.io/address/0xe55e00d743751fd622a9a0478b3c4a47ef3cd632) |
-| TBA           | 0            | TBA                                                                                                                              |
+| Compare       | 0            | [0x52742F069223656f4cA02706612F8083b201Bd5F](https://optimistic.etherscan.io/address/0x52742F069223656f4cA02706612F8083b201Bd5F) |
 | Divisors      | 1            | [0x715Ff443571Af51A1F2931Fdb7f6B66b70aae6d0](https://optimistic.etherscan.io/address/0x715Ff443571Af51A1F2931Fdb7f6B66b70aae6d0) |
 | Mode          | 2            | [0x3cd27cc11577c70b91f570113730feb206424ab8](https://optimistic.etherscan.io/address/0x3cd27cc11577c70b91f570113730feb206424ab8) |
-| TBA           | 3            | TBA                                                                                                                              |
+| Mode3         | 3            | [0x28189710BDF3337d20A287618E582D66976E37BD](https://optimistic.etherscan.io/address/0x28189710BDF3337d20A287618E582D66976E37BD) |
 | Reverse       | 4            | [0xd6Ca10E9a443f83Db6Aa527a423b7150a1Cfc4f5](https://optimistic.etherscan.io/address/0xd6Ca10E9a443f83Db6Aa527a423b7150a1Cfc4f5) |
-| TBA           | 5            | TBA                                                                                                                              |
+| Sort5         | 5            | [0xcF451d2b18b0deF7107f4672BcB65883fE71471e](https://optimistic.etherscan.io/address/0xcF451d2b18b0deF7107f4672BcB65883fE71471e) |

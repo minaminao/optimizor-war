@@ -11,9 +11,9 @@ docs/
 # Dotenv file
 .env
 
-src/challenges/*
-!src/challenges/ExampleChallenge.sol
 src/solvers/*
+_*
+*_
 !src/solvers/ExampleSolver.sol
 test/*
 !test/OptimizorWar.t.sol
